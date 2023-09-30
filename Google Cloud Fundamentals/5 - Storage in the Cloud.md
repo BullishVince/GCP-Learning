@@ -95,3 +95,10 @@ Modify the Access Control List of the object you just created so that it's reada
 gsutil acl ch -u allUsers:R gs://$DEVSHELL_PROJECT_ID/my-excellent-blog.png
 ```
   
+Here's the URL to the image I have stored in Cloud Storage: https://storage.googleapis.com/qwiklabs-gcp-02-52e51ec4d04c/my-excellent-blog.png  
+![Alt text](image-26.png)
+
+**Create a MySQL Database using Cloud SQL**
+I created a MySQL database using Cloud SQL.
+The default admin user is added when creating the database but I also created another user.
+Then, I connect the db with the VM by adding a network to our database using the external IP of our VM (35.231.117.73/32)
