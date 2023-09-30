@@ -61,3 +61,37 @@ Here's when customers often choose Cloud Bigtable as their storage
 ## Comparing Storage Options in GCP
 ![Alt text](image-25.png)
 
+### LAB NOTES
+**Configurations for the VM containing the running Apache Webserver** 
+Internal IP = 10.142.0.2
+External IP = http://35.231.117.73/
+
+**Creating a Cloud Storage bucket using the gcloud storage command line**  
+  
+*Inside the Cloud Shell:*
+  
+For convenience, enter your chosen location into an environment variable called LOCATION:
+```sh
+export LOCATION=EU
+```
+  
+Enter this command to make a bucket named after your project ID, where $DEVSHELL_PROJECT_ID is your GCP Project ID:
+```sh
+gcloud storage buckets create -l $LOCATION gs://$DEVSHELL_PROJECT_ID
+```
+  
+Retrieve a banner image from a publicly accessible Cloud Storage location:
+```sh
+gcloud storage cp gs://cloud-training/gcpfci/my-excellent-blog.png my-excellent-blog.png
+```  
+  
+Copy the banner image to your newly created Cloud Storage bucket:
+```sh
+gcloud storage cp my-excellent-blog.png gs://$DEVSHELL_PROJECT_ID/my-excellent-blog.png
+```  
+  
+Modify the Access Control List of the object you just created so that it's readable by everyone:
+```sh
+gsutil acl ch -u allUsers:R gs://$DEVSHELL_PROJECT_ID/my-excellent-blog.png
+```
+  
