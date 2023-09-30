@@ -32,3 +32,32 @@ There are four primary storage classes in Cloud Storage
 ![Alt text](image-16.png)
 
 ## Cloud SQL  
+![Alt text](image-17.png)
+There's no mundane infrastructure tasks which you have to do. Google handles applying patches/updates, manages backups, and configures replications.
+All this to reduce the amount of mundane tasks you have to do and instead you can focus on building great applications.
+
+![Alt text](image-18.png)
+
+## Cloud Spanner  
+![Alt text](image-19.png)
+
+## Firestore
+Firestore is a flexible, horizontally scalable, NoSQL cloud database.
+![Alt text](image-20.png)
+
+**When using Firestore, this is what you're charged for**
+![Alt text](image-21.png)
+You can also estimate your costs by using Google's Billing Calculator.
+
+![Alt text](image-22.png)
+
+## Cloud Bigtable
+Cloud Bigtable is Googles NoSQL BigData database service.
+![Alt text](image-23.png)
+
+Here's when customers often choose Cloud Bigtable as their storage
+![Alt text](image-24.png)
+
+## Comparing Storage Options in GCP
+![Alt text](image-25.png)
+
