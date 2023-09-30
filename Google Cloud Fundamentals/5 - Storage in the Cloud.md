@@ -52,7 +52,7 @@ You can also estimate your costs by using Google's Billing Calculator.
 ![Alt text](image-22.png)
 
 ## Cloud Bigtable
-Cloud Bigtable is Googles NoSQL BigData database service.
+Cloud Bigtable is Googles NoSQL BigData database service.  
 ![Alt text](image-23.png)
 
 Here's when customers often choose Cloud Bigtable as their storage
