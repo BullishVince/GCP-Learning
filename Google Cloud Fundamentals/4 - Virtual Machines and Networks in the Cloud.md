@@ -52,3 +52,36 @@ VPCs in GCP also offers firewalls.
 With **VPC Peering**, two VPCs can establish a connection to exchange traffic. Alternatively, to use the full power of IAM, and share that config between multiple VPCs, you can then use a **Shared VPC**.
 
 ## Cloud Load Balancing
+![Alt text](image-8.png)
+Cloud Load Balancing provides single as well as cross-region load balancing, including automatic multi-region failover.
+Also, no "pre-warming" is required for anticipated spikes in traffic.
+
+## Cloud DNS and Cloud CDN
+One of the most famous free Google services is the 8.8.8.8 service, which provides a public domain name service (DNS) to the world.
+
+### DNS
+Domain Name Service (DNS) is what translates internet hostnames to IP-addresses.
+
+**What about the internet hostnames and IP addresses of applications built in Google Cloud?**
+Google Cloud offers the product **Cloud DNS**, to help the world find them.
+![Alt text](image-9.png)
+
+CDN (Content Delivery Networks) are available in Google Cloud through the **Cloud CDN**.
+Cloud CDN offers lower network latency for your users and visitors, it saves money and is easily toggled with a single checkbox.
+
+## Connecting networks to Google VPC  
+It is very common that you want to connect other networks, such as an on-prem network, with your Google Cloud network.
+There are several effective ways of accomplishing this:
+
+### Start with a VPC over the internet and use the IPSec VPN protocol
+Use the IPSec VPN protocol to create a tunnel connection.
+
+To make the connection dynamic, a GCP feature called **Cloud Router** can be used.
+Cloud Router lets other networks and Google VPC exchange route information over VPN using the **Border Gateway Protocol**.
+This is not always the best solution because of security concerns or bandwidth reliability.
+
+### Direct Peering
+Direct Peering means putting a router in the same public datacenter as Google Point of Presence (PoP), and then use that router to exchange traffic between the two networks.
+
+### Others
+There's some more methods to use for connecting networks to Google VPC but I didn't have time to write them down here since they're too long to cover.
